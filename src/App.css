@@ -1,0 +1,46 @@
+.App {
+  text-align: center;
+  height: 100vh; /* Full height of the viewport */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center vertically */
+  align-items: center; /* Center horizontally */
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-gap: 10px;
+}
+
+.square {
+  width: 100px;
+  height: 100px;
+  background-color: #ddd;
+  border: 1px solid #999;
+  font-size: 2rem;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.reset-button {
+  margin-top: 20px;
+}
+
+.winner-message {
+  position: absolute;
+  top: 20%; /* Adjusted to move the message above the board */
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  font-size: 2rem;
+  font-weight: bold;
+  z-index: 2; /* Ensure it's above other elements */
+}
+
